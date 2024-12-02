@@ -1,11 +1,16 @@
 import React from "react";
-function Video(){
-    return(
-        <div className="video">
-            <video src="https://www.tiktok.com/@moonlight_editz9/video/7275638118177443078?q=taylor%20swift&t=1732877109418"></video>
 
+function Video() {
+    return (
+        <div className="video_player"
+        loop
+        >
+            <video controls width="600">
+                <source src="/VID-20230813-WA0021.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
         </div>
-    )
+    );
 }
 
-export default Video
+export default Video;
